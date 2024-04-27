@@ -1,2 +1,2 @@
 # maisPraTI
-Repositório do curso pelo CodificaEdu pela iniciativa +praTI.
+Repositório do curso para Desenvolvedor Full Stack Jr. pelo Codifica pela iniciativa +praTI.
