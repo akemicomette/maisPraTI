@@ -1,3 +1,5 @@
-<h1 align="center"> # maisPraTI </h1>
+# Iniciativa +PraTI
+
+<hr/>
 
 Repositório do curso para Desenvolvedor Full Stack Jr. pelo Codifica através da iniciativa +praTI.
