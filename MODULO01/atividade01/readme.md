@@ -1,19 +1,38 @@
-# Módulo 1 - Atividade 1
+# Lista de Tarefas 01 - Módulo 1
 
-Lista de atividades 1 do primeiro módulo do curso
+Este repositório contém a lista 1 de exercícios de programação em JavaScript, feitos pela **Aluna:** [Fernanda Akemi](https://www.github.com/akemicomette), utilizando somente os conteúdos abordados no **Módulo 1: Introdução à Lógica de Programação**, da Formação: Dev Full Stack Junior da [+PraTI](https://www.maisprati.com.br/) e [Codifica](https://www.codificaedu.com.br/).
 
-## Instalação
 
-<h4>Instale as dependências do projeto com npm</h4>
 
-```bash
-  npm i
-```
+## Configurações e Execução 🛠️
 
-## Execução
+Para executar os exercícios, você precisará de um ambiente com o [Node.js](https://nodejs.org/) instalado.
 
-<h4> Execute o arquivo index.js e selecione o exercício desejado.</h4>
+### ⚙️ Configuração
+
+- Faça o clone deste repositório na máquina local:
 
 ```bash
-  node index.js
+# HTTPS:
+git clone https://github.com/akemicomette/maisPraTI.git
+
 ```
+
+- Instalar as dependências
+
+```bash
+npm install prompt-sync
+```
+
+### ▶️ Execução
+
+- Entrar no diretório do projeto e executar o exercicio desejado
+
+```bash
+cd MaisPraTi
+cd MODULO01
+cd atividade01
+node <index.js>
+```
+
+_Obs: Após a execução do index.js, digitar o número da questão que deseja testar_
