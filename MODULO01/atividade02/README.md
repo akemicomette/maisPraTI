@@ -31,7 +31,7 @@ npm install prompt-sync
 ```bash
 cd MaisPraTi
 cd MODULO01
-cd ativididade02
+cd atividade02
 node <index.js>
 ```
 
