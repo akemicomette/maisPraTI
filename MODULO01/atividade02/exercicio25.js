@@ -1,7 +1,5 @@
 const prompt = require("prompt-sync")();
 
-//
-
 // function getRandomArbitrary(min, max) {
 //   return Math.random() * (max - min) + min;
 // }
@@ -12,11 +10,16 @@ function exercicio25() {
   let nRow = 15;
   let nColumn = 20;
   
-  for(let row = 0; row < nRow; row++){
+  for(let row = 0; row < nRow; row++) {
     let line = [];
-    for(let column = 0; column < nColumn; column++){
+    for(let column = 0; column < nColumn; column++) {
+      
       let realNumber = parseFloat(prompt(`Insira o número ${count}º da matriz: `));
-      // let realNumber = parseFloat(getRandomArbitrary(-100, 100).toFixed(2));
+        if (isNaN(realNumber)) {
+          console.log("Valores inseridos inválidos! Reinicie a questão.");
+          return;
+        // let realNumber = parseFloat(getRandomArbitrary(-100, 100).toFixed(2));
+        }
       line.push(realNumber);
       count++;
     }
@@ -25,7 +28,7 @@ function exercicio25() {
 
   console.log('');
   console.log('Matriz inicial:')
-  for (let i = 0; i < matrix.length; i++){
+  for (let i = 0; i < matrix.length; i++) {
     console.log(matrix[i].join(', '));
   }
   console.log('');
