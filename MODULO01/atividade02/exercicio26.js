@@ -1,22 +1,24 @@
-function getRandomArbitrary(min, max) {
-  return Math.floor(Math.random() * (max - min) + min);
-}
+function exercicio26(){
 
-const matrixA = [];
-const matrixB = [];
-const rowsCountMatrixA = 3;
-const columnsCountMatrixA = 5;
-const rowsCountMatrixB = 5;
-const columnsCountMatrixB = 3;
-
-if(columnsCountMatrixA != rowsCountMatrixB) {
-  console.log('Não é possivel fazer a multiplicação de matrizes, pois o número de colunas da matriz A é diferente do número de linhas da matriz B.')
-}
-
-for(let row = 0; row < rowsCountMatrixA; row++){
+  function getRandomArbitrary(min, max) {
+    return Math.floor(Math.random() * (max - min) + min);
+  }
+  
+  const matrixA = [];
+  const matrixB = [];
+  const rowsCountMatrixA = 3;
+  const columnsCountMatrixA = 5;
+  const rowsCountMatrixB = 5;
+  const columnsCountMatrixB = 3;
+  
+  if(columnsCountMatrixA != rowsCountMatrixB) {
+    console.log('Não é possivel fazer a multiplicação de matrizes, pois o número de colunas da matriz A é diferente do número de linhas da matriz B.')
+  }
+  
+  for(let row = 0; row < rowsCountMatrixA; row++){
   let line =[]
   for(let column = 0; column < columnsCountMatrixA; column++){
-   line.push(getRandomArbitrary(-10,10));
+    line.push(getRandomArbitrary(-10,10));
   }
   matrixA.push(line);
   line = [];
@@ -52,3 +54,7 @@ for (let row = 0; row < resultDimensions.resultRows; row++) {
 
 console.log(resultDimensions);
 console.log(result);
+
+}
+
+exercicio26();
