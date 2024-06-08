@@ -2,7 +2,7 @@ const prompt = require("prompt-sync")();
 const { verifyValidEntrance } = require("./verficaEntradaValida.js");
 const { generateMatrix } = require("./generateMatrix.js");
 
-function exercicio27(){
+function exercicio27() {
   
   const matrixM = generateMatrix(6,6);
   
@@ -18,9 +18,9 @@ function exercicio27(){
       vector.push(result);
     }
   }
- 
-  console.log('matriz M: ', matrixM);
-  console.log('vetor é: ', vector);
+  
+  console.log('Matriz M: ', matrixM);
+  console.log(vector.join(', '));
 }
   
  exercicio27();

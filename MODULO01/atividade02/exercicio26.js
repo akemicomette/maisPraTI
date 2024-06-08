@@ -1,7 +1,7 @@
 const { generateMatrix } = require("./generateMatrix.js");
 const { printMatrix } = require("./printMatrix.js");
 
-function exercicio26(){
+function exercicio26() {
 
   const rowsCountMatrixA = 3;
   const columnsCountMatrixA = 5;
@@ -13,10 +13,10 @@ function exercicio26(){
   }
   
   const matrixA = generateMatrix(rowsCountMatrixA, columnsCountMatrixA);
-  printMatrix(matrixA);
+  printMatrix(matrixA, 'A');
 
   const matrixB = generateMatrix(rowsCountMatrixB, columnsCountMatrixB);
-  printMatrix(matrixB);
+  printMatrix(matrixB, 'B');
 
   const resultDimensions = {resultRows: rowsCountMatrixA, resultColumns: columnsCountMatrixB};
   const result = Array.from({ length: resultDimensions.resultRows }, () => ([]));
@@ -30,8 +30,7 @@ function exercicio26(){
       result[row][column] = sum;
     } 
   }
-
-  console.log(resultDimensions);
+  console.log('Matriz produto é igual a:')
   console.log(result);
 
 }

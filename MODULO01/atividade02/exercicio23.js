@@ -3,10 +3,10 @@ function exercicio23(){
 
   let matrix = [];
   
-  for(let i = 0; i < 7; i++ ){
+  for(let row = 0; row < 7; row++ ){
     let line = [];
-    for(let j = 0; j < 7; j++){
-      if (i == j){
+    for(let column = 0; column < 7; column++){
+      if (row == column){
         line.push(1);
       } else {
         line.push(0);

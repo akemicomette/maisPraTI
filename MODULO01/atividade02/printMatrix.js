@@ -1,6 +1,5 @@
-function printMatrix(matrix){
-  console.log('');
-  console.log('Matriz inicial:')
+function printMatrix(matrix,name){
+  console.log(`Matriz ${name}:`);
   for (let i = 0; i < matrix.length; i++){
     console.log(matrix[i].join(', '));
   }
