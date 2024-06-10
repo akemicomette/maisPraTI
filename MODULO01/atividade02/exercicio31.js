@@ -3,13 +3,14 @@ const { generateMatrix } = require("./generateMatrix.js");
 const { printMatrix } = require("./printMatrix.js");
 
 function exercicio31() {
-  const nRow = 30;
-  const nColumn = 30;
+  const nRow = 10;
+  const nColumn = 10;
   const matrixV = generateMatrix(nRow, nColumn);
   printMatrix(matrixV, 'V');
 
   const A = parseInt(prompt('Digite um número para ser comparado com a Matriz V: '))
   if(isNaN(A)){
+    console.log('Erro! São aceitos somente números inteiros. Reinicie a questão.')
     return;
   }
 
