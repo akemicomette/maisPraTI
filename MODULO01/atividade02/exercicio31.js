@@ -3,8 +3,8 @@ const { generateMatrix } = require("./generateMatrix.js");
 const { printMatrix } = require("./printMatrix.js");
 
 function exercicio31() {
-  const nRow = 10;
-  const nColumn = 10;
+  const nRow = 30;
+  const nColumn = 30;
   const matrixV = generateMatrix(nRow, nColumn);
   printMatrix(matrixV, 'V');
 
