@@ -11,7 +11,8 @@ function exercicio09(){
   while (shouldContinue === "s") {
     console.log("Para inserir as informações dx colaboradxr, por favor digite: \n1 - masculino \n2 - feminino \n3 - não-binário: ");
     let sex = parseInt(prompt('> '));
-    if (verifyValidEntrance(sex) === false) {
+    if (verifyValidEntrance(sex) === false || sex > 3) {
+      console.log("Erro! Digite 1, 2 ou 3 para inserir as informações dos colaboradorxs. ");
       return;
     }
       

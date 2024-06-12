@@ -10,10 +10,10 @@ function exercicio02() {
   if (velocity > 80) {
     const fine = (velocity - 80) * 5;
     console.log(
-      `Você foi finedo! O valor da fine é ${fine} reais. Favor efetuar o pagamento através dos serviços online do Detran.`
+      `Você foi multado! O valor da multa é ${fine} reais. Favor efetuar o pagamento através dos serviços online do Detran.`
     );
   } else {
-    console.log("Você não foi finedo.");
+    console.log("Você não foi multado.");
   }
 }
 

@@ -17,7 +17,7 @@ function getAnswers(count){
 
 function exercicio37() {
   const vectorG = getAnswers(20);
-  console.log(`Vetor Gabarito: ${vectorG}`);
+  console.log(`Vetor Gabarito: \n${vectorG}`);
 
   let vectorR = [];
   for(let i = 0; i < 50; i++) {
