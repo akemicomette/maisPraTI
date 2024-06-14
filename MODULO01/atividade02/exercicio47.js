@@ -43,4 +43,4 @@ function exercicio47() {
   console.log(spaceForBooks);
 }
 
-exercicio47();
+module.exports = { exercicio47 };

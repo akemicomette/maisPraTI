@@ -18,9 +18,9 @@ function exercicio11(){
     
     var sum = (i/2) * (2*firstNumber + ((i - 1)*fixedNumber));
   }
-  console.log(sum);
-  console.log(pa);
+  console.log(`O valor total da soma de todos os elementos é: ${sum}`);
+  console.log(`A Progressão Aritmética gerada é: ${pa}`);
 }
 
-exercicio11();
+module.exports = { exercicio11 };
   

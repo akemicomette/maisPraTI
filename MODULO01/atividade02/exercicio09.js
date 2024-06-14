@@ -56,4 +56,4 @@ function exercicio09(){
   console.log(`O total da soma dos salários pagos aos não binários ${nBinWage.toFixed(2)}`);
 }
 
-exercicio09();
+module.exports = { exercicio09 };

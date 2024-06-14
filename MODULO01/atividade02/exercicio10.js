@@ -8,7 +8,7 @@ function exercicio10(){
   let sum = 0;
   
   while(shouldContinue === "s"){
-    console.log("Qual o novo número que deseja inserir?");
+    console.log("Qual o número que deseja inserir para calcular?");
     var newNumber = prompt("> ");
     if(verifyValidEntrance(newNumber) === false){
       return;
@@ -52,4 +52,4 @@ function exercicio10(){
   console.log(`A quantidade de valores pares inseridos foi: ${pair}.`);
 }
 
-exercicio10();
+module.exports = { exercicio10 };

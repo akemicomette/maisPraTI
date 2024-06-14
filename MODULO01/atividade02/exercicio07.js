@@ -2,19 +2,16 @@ const prompt = require("prompt-sync")();
 const { verifyValidEntrance } = require("./utils/verficaEntradaValida.js");
 
 function exercicio07() {
-  const chooseCar = parseInt(
-    prompt(
-      "Qual carro deseja alugar? Digite 1 - carro popular ou 2 - carro luxo."
-    )
-  );
+  console.log('Qual carro deseja alugar? Digite 1 - carro popular ou 2 - carro luxo.')
+  const chooseCar = parseInt(prompt("> "));
   if (verifyValidEntrance(chooseCar) === false) {
     return;
   }
-  const days = parseInt(prompt("Quantos dias de aluguel?"));
+  const days = parseInt(prompt("Quantos dias de aluguel?  "));
   if (verifyValidEntrance(days) === false) {
     return;
   }
-  const km = parseInt(prompt("Quantos km foram rodados?"));
+  const km = parseInt(prompt("Quantos km foram rodados?  "));
   if (verifyValidEntrance(km) === false) {
     return;
   }
@@ -39,4 +36,4 @@ function exercicio07() {
   );
 }
 
-exercicio07();
+module.exports = { exercicio07 };

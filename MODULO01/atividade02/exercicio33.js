@@ -28,8 +28,8 @@ function exercicio33() {
         }
       }
     }
-  console.log('\nElementos da Diagonal Principal multiplicados pela média dos elesmentos da Diagonal Secundária:')
+  console.log('\nElementos da Diagonal Principal multiplicados pela média dos elementos da Diagonal Secundária:')
   console.log(changedDiagonal);
 }
 
-exercicio33();
+module.exports = { exercicio33 };

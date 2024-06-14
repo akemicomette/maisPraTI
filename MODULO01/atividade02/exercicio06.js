@@ -8,8 +8,9 @@ function exercicio06() {
   if (verifyValidEntrance(numeroChutado) === false) {
     return;
   }
-
+  
   while (numeroChutado != numeroSorteado) {
+
     if (numeroChutado > 5 || numeroChutado === 0) {
       console.log("Valor inválido! Inserir valor 1 e 5. Reinicie a questão.");
     } else {
@@ -20,4 +21,4 @@ function exercicio06() {
   console.log("Parabéns! Você adivinhou o número!");
 }
 
-exercicio06();
+module.exports = { exercicio06 };

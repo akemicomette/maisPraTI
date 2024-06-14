@@ -33,4 +33,4 @@ function exercicio15(){
   console.log(registerPairs);
 }
 
-exercicio15();
+module.exports = { exercicio15 };

@@ -11,6 +11,7 @@ function exercicio22(){
   let medianOfChildren;
   let percentage;
   
+  console.log('\nInsira as informações solicitadas para pesquisa da prefeitura sobre seus habitantes.')
   while (shouldContinue === "s"){
     console.log("Insira o salário em reais:");
     let salary = parseFloat(prompt(" >  "));
@@ -62,4 +63,4 @@ function exercicio22(){
   console.log(`O percentual de pessoas com salário até R$ 350,00 é de ${percentage.toFixed(2)}%.`)
 }
   
-exercicio22();
+module.exports = { exercicio22 };

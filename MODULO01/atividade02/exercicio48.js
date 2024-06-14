@@ -37,7 +37,8 @@ function exercicio48(){
   }
   
   inventarioCombinado = compareObjects(inventarioLojaA, inventarioLojaB);
+  console.log('Inventario combinado das lojas A e B, somando as quantidades de itens iguais.');
   console.log(inventarioCombinado);
 }
 
-exercicio48();
+module.exports = { exercicio48 };

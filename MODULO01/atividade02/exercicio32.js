@@ -23,7 +23,8 @@ function exercicio32() {
   }
   matrixMd.push(rowMd);
   }
+  console.log('Matriz Resultante da divisão de cada elemento pelo maior elemento em módulo da sua linha da Matriz M');
   printMatrix(matrixMd, 'Resultante')
 }
 
-exercicio32();
+module.exports = { exercicio32 };

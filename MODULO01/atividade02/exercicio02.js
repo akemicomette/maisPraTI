@@ -2,7 +2,7 @@ const prompt = require("prompt-sync")();
 const { verifyValidEntrance } = require("./utils/verficaEntradaValida.js");
 
 function exercicio02() {
-  const velocity = parseInt(prompt("Qual a velocity do carro? "));
+  const velocity = parseInt(prompt("Qual a velocidade do carro? "));
   if (verifyValidEntrance(velocity) === false) {
     return;
   }
@@ -17,4 +17,4 @@ function exercicio02() {
   }
 }
 
-exercicio02();
+module.exports = { exercicio02 };

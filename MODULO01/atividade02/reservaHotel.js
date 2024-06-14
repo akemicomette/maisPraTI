@@ -163,4 +163,4 @@ function menu() {
   }
 }
 
-menu();
+module.exports = { menu };

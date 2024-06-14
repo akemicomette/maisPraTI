@@ -14,7 +14,7 @@ function exercicio13(){
     nextNumber = number1 + number2;
     sequence.push(nextNumber)
   }
-  console.log(sequence);
+  console.log(`Vetor numérico preenchido automaticamente é: ${sequence}`);
 }
 
-exercicio13();
+module.exports = { exercicio13 };

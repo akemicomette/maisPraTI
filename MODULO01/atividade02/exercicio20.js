@@ -30,4 +30,4 @@ function exercicio20() {
   console.log(workers);
 }
 
-exercicio20();
+module.exports = { exercicio20 };

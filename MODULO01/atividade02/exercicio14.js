@@ -11,9 +11,9 @@ function exercicio14(){
   }
   
   const reversed = list.reverse();
-  console.log('Segue a lista em ordem inversa da leitura:');
+  console.log('\nSegue a lista em ordem inversa da leitura:');
   console.log(reversed);
 
 }
 
-exercicio14();
+module.exports = { exercicio14 };

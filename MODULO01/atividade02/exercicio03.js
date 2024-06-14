@@ -18,4 +18,4 @@ function exercicio03() {
   }
 }
 
-exercicio03();
+module.exports = { exercicio03 };

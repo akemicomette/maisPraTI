@@ -10,7 +10,7 @@ function exercicio05() {
   }
 
   const optionMachine = parseInt(Math.random() * 3) + 1;
-  console.log(optionMachine);
+  console.log(`A máquina escolheu a opção ${optionMachine}`);
 
   if (
     (option === 1 && optionMachine === 2) ||
@@ -18,7 +18,6 @@ function exercicio05() {
     (option === 3 && optionMachine === 1)
   ) {
     console.log(`Parabéns! Você escolheu ${option} e venceu!`);
-    console.log(`A escolha da maquina foi ${optionMachine}.`);
   } else if (option === optionMachine) {
     console.log("Você empatou com a máquina! Tente novamente.");
   } else {
@@ -26,4 +25,4 @@ function exercicio05() {
   }
 }
 
-exercicio05();
+module.exports = { exercicio05 };

@@ -41,4 +41,4 @@ function exercicio35() {
     console.log(`Ímpar - Vetor Total de Números Ímpares: ${oddTotalVector.join(', ')}`);
 }
 
-exercicio35();
+module.exports = { exercicio35 };

@@ -31,4 +31,4 @@ function exercicio31() {
   console.log(matrixResult);
 }
 
-exercicio31();
+module.exports = { exercicio31 };

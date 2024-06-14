@@ -27,4 +27,4 @@ function exercicio42() {
   console.log(justArrays);
 }
 
-exercicio42();
+module.exports = { exercicio42 };

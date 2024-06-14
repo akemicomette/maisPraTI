@@ -15,4 +15,4 @@ function exercicio39() {
   console.log(`\nVetor B: \n${vectorB.join(', ')}`);
 }
 
-exercicio39();
+module.exports = { exercicio39 };

@@ -6,6 +6,7 @@ function exercicio17(){
   const fullName = [];
   const ageList = [];
 
+  console.log('Insira as informações solicitadas para listagem dos menores de idade.')
   for(let i = 0; i < personCount; i++) {
     let name = prompt('Nome: ');
     let age = parseInt(prompt('Idade: '));
@@ -29,7 +30,8 @@ function exercicio17(){
     }
   }
 
+  console.log('Lista das pessoas menores de idade:');
   console.log(underage);
 }
 
-exercicio17();
+module.exports = { exercicio17 };

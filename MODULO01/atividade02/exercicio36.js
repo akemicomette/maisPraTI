@@ -42,4 +42,5 @@ function loteriaEsportiva() {
 
 }
 
-loteriaEsportiva();
+module.exports = { loteriaEsportiva };
+

@@ -23,4 +23,4 @@ function exercicio46() {
   console.log(report);
 }
 
-exercicio46();
+module.exports = { exercicio46 };

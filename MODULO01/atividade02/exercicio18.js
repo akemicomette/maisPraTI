@@ -27,5 +27,5 @@ function exercicio18(){
   console.log(`Salário R$ ${employeeSalary}.`);
 }
 
-exercicio18();
+module.exports = { exercicio18 };
   

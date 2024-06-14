@@ -18,4 +18,4 @@ function exercicio12(){
     console.log(sequence);
 }
 
-exercicio12();
+module.exports = { exercicio12 };

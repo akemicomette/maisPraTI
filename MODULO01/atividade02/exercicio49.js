@@ -50,8 +50,11 @@ function financial() {
   return transactions;
 }
 
+function exercicio49() {
+  const transactions = financial();
+  console.log('Transações Geradas:', transactions);
+  const categorizedTransactions = categorizeTransactions(transactions);
+  console.log("Transações Agrupadas por Categoria:", categorizedTransactions);
+}
 
-const transactions = financial();
-console.log('Transações Geradas:', transactions);
-const categorizedTransactions = categorizeTransactions(transactions);
-console.log("Transações Agrupadas por Categoria:", categorizedTransactions);
+module.exports = { exercicio49 };

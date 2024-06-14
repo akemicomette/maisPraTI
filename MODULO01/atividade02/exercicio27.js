@@ -20,7 +20,8 @@ function exercicio27() {
   }
   
   console.log('Matriz M: ', matrixM);
+  console.log('Vetor gerado pela multiplicação da Matriz M com o multiplicador inserido.')
   console.log(vector.join(', '));
 }
   
- exercicio27();
+module.exports = { exercicio27 };

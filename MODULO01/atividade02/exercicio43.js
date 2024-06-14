@@ -27,4 +27,4 @@ function exercicio43() {
   console.log(joinedObjects);
 }
 
-exercicio43();
+module.exports = { exercicio43 };

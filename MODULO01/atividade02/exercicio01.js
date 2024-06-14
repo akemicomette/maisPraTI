@@ -16,7 +16,7 @@ function exercicio01() {
     return;
   }
 
-  const countingDays = anos * 365;
+  const countingDays = years * 365;
   const cigarettsTotal = countingDays * cigaretts;
   const lostMinutes = cigarettsTotal * 10;
   const lostDays = Math.floor(lostMinutes / 1440);
@@ -25,4 +25,4 @@ function exercicio01() {
   );
 }
 
-exercicio01();
+module.exports = { exercicio01 };

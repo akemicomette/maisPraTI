@@ -28,6 +28,7 @@ function exercicio40(){
   }
   
   console.log(`Resultado concurso 6461(08/06/2024) ${winnerVector}`);
+  console.log('Apostadores dessa rodada',vectorGambler);
 
   let hits = 0;
   vectorGambler.forEach(gamblers => {
@@ -44,4 +45,4 @@ function exercicio40(){
   }
 }
 
-exercicio40();
+module.exports = { exercicio40 };

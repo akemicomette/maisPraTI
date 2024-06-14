@@ -33,4 +33,4 @@ function exercicio28() {
   
 }
 
-exercicio28();
+module.exports = { exercicio28 };

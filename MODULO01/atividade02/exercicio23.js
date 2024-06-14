@@ -25,4 +25,4 @@ function exercicio23(){
   printMatrix(matrix);
 }
 
-exercicio23();
+module.exports = { exercicio23 };

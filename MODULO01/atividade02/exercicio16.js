@@ -15,10 +15,4 @@ function exercicio16(){
   console.log(`\nVetor de números gerados em ordem crescente: \n${position}`);
 }
 
-exercicio16();
-
-
-
-
-
-
+module.exports = { exercicio16 };

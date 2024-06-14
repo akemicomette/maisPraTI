@@ -28,4 +28,4 @@ function exercicio30() {
   console.log(SC);
 }
 
-exercicio30();
+module.exports = { exercicio30 };

@@ -7,6 +7,7 @@ function countStrings(array){
       count[repeatedWords] = 1;
     }
   }
+  console.log('Cada string é uma chave e seu valor é o número de vezes que a string aparece no array.')
   console.log(count);
 }
 
@@ -15,4 +16,4 @@ function exercicio45(){
   countStrings(cities);
 }
 
-exercicio45();
+module.exports = { exercicio45 };

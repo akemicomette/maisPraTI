@@ -20,4 +20,4 @@ function exercicio25() {
   console.log(`${sumColumns.join(', ')}`);
 }
 
-exercicio25();
+module.exports = { exercicio25 };

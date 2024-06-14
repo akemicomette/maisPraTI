@@ -27,4 +27,4 @@ function exercicio24(){
   countNegatives(matrix);
 }
 
-exercicio24();
+module.exports = { exercicio24 };

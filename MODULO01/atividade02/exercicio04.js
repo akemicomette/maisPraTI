@@ -2,15 +2,15 @@ const prompt = require("prompt-sync")();
 const { verifyValidEntrance } = require("./utils/verficaEntradaValida.js");
 
 function exercicio04() {
-  const side1 = parseInt(prompt("Insira o comprimento do primeiro lado "));
+  const side1 = parseInt(prompt("Insira o comprimento do primeiro lado: "));
   if (verifyValidEntrance(side1) === false) {
     return;
   }
-  const side2 = parseInt(prompt("Insira o valor do segundo lado "));
+  const side2 = parseInt(prompt("Insira o valor do segundo lado: "));
   if (verifyValidEntrance(side2) === false) {
     return;
   }
-  const side3 = parseInt(prompt("Insira o valor do terceiro lado "));
+  const side3 = parseInt(prompt("Insira o valor do terceiro lado: "));
   if (verifyValidEntrance(side3) === false) {
     return;
   }
@@ -22,4 +22,4 @@ function exercicio04() {
   }
 }
 
-exercicio04();
+module.exports = { exercicio04 };
