@@ -1,5 +1,5 @@
 const prompt = require("prompt-sync")();
-const { verifyValidEntrance } = require("./verficaEntradaValida.js");
+const { verifyValidEntrance } = require("./utils/verficaEntradaValida.js");
 
 function exercicio08() {
   const hours = parseInt(prompt("Quantas horas se exercitou neste mês? "));

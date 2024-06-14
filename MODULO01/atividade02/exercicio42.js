@@ -1,4 +1,4 @@
-const { generateVector } = require("./generateVector");
+const { generateVector } = require("./utils/generateVector.js");
 
 function exercicio42() {
   const dados = {

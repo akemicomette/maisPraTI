@@ -1,10 +1,10 @@
 function countStrings(array){
   const count = {};
-  for (const repetedWords of array){
-    if(count[repetedWords]){
-      count[repetedWords]++;
+  for (const repeatedWords of array){
+    if(count[repeatedWords]){
+      count[repeatedWords]++;
     } else {
-      count[repetedWords] = 1;
+      count[repeatedWords] = 1;
     }
   }
   console.log(count);

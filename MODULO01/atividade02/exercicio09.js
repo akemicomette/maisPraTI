@@ -1,5 +1,5 @@
 const prompt = require("prompt-sync")();
-const { verifyValidEntrance } = require("./verficaEntradaValida.js");
+const { verifyValidEntrance } = require("./utils/verficaEntradaValida.js");
 
 function exercicio09(){
 
@@ -22,21 +22,21 @@ function exercicio09(){
       return;
     }
       
-  switch (sex) {
-    case 1:
-      mascWage += wage;
-      break;
-    case 2:
-      femWage += wage;
-      break;
-    case 3:
-      nBinWage += wage;
-      break;
-    default:
-      console.log("Inválido! Digite 1, 2 ou 3 para inserir as informações dos colaboradorxs. ");
-  }
+    switch (sex) {
+      case 1:
+        mascWage += wage;
+        break;
+      case 2:
+        femWage += wage;
+        break;
+      case 3:
+        nBinWage += wage;
+        break;
+      default:
+        console.log("Inválido! Digite 1, 2 ou 3 para inserir as informações dos colaboradorxs. ");
+    }
             
-  let isValidEntry = false;
+    let isValidEntry = false;
     while (isValidEntry === false) {
       console.log("Deseja continuar? \ns - sim \nn - não. ");
       shouldContinue = prompt("> ");

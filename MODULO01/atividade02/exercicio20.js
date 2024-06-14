@@ -1,9 +1,9 @@
 const prompt = require("prompt-sync")();
-const { verifyValidEntrance } = require("./verficaEntradaValida.js");
+const { verifyValidEntrance } = require("./utils/verficaEntradaValida.js");
 
 function exercicio20() {
 
-  const amountWorkers = 2;
+  const amountWorkers = 80; 
   const workers =[];
   
   for (let i = 0; i < amountWorkers; i++) {
@@ -17,8 +17,8 @@ function exercicio20() {
     const netSalary = parseFloat(grossIncome - inssDeduction);
     
     const registry = {
-      nome : name.toLocaleUpperCase(),
       matricula: registration,
+      nome : name.toLocaleUpperCase(),
       SalarioBruto: grossIncome.toFixed(2),
       DeducaoINSS: inssDeduction.toFixed(2),
       SalarioLiquido: netSalary.toFixed(2),

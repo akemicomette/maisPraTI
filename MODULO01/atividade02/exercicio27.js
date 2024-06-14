@@ -1,6 +1,6 @@
 const prompt = require("prompt-sync")();
-const { verifyValidEntrance } = require("./verficaEntradaValida.js");
-const { generateMatrix } = require("./generateMatrix.js");
+const { verifyValidEntrance } = require("./utils/verficaEntradaValida.js");
+const { generateMatrix } = require("./utils/generateMatrix.js");
 
 function exercicio27() {
   

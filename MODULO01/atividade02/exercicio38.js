@@ -1,6 +1,6 @@
-const { generateVector } = require("./generateVector");
 const prompt = require("prompt-sync")();
-const { verifyValidEntrance } = require("./verficaEntradaValida.js");
+const { generateVector } = require("./utils/generateVector.js");
+const { verifyValidEntrance } = require("./utils/verficaEntradaValida.js");
 
 function exercicio38() {
   const countElements = 6;

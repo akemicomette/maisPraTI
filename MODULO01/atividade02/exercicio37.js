@@ -14,7 +14,6 @@ function getAnswers(count){
   return answers;
 }
 
-
 function exercicio37() {
   const vectorG = getAnswers(20);
   console.log(`Vetor Gabarito: \n${vectorG}`);

@@ -1,5 +1,5 @@
 const prompt = require("prompt-sync")();
-const { verifyValidEntrance } = require("./verficaEntradaValida.js");
+const { verifyValidEntrance } = require("./utils/verficaEntradaValida.js");
 
 function exercicio02() {
   const velocity = parseInt(prompt("Qual a velocity do carro? "));

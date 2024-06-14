@@ -1,5 +1,5 @@
-const { generateMatrix } = require("./generateMatrix.js");
-const { printMatrix } = require("./printMatrix.js");
+const { generateMatrix } = require("./utils/generateMatrix.js");
+const { printMatrix } = require("./utils/printMatrix.js");
 
 function exercicio26() {
 

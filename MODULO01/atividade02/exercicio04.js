@@ -1,5 +1,5 @@
 const prompt = require("prompt-sync")();
-const { verifyValidEntrance } = require("./verficaEntradaValida.js");
+const { verifyValidEntrance } = require("./utils/verficaEntradaValida.js");
 
 function exercicio04() {
   const side1 = parseInt(prompt("Insira o comprimento do primeiro lado "));

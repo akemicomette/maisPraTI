@@ -1,5 +1,5 @@
 const prompt = require("prompt-sync")();
-const { verifyValidEntrance } = require("./verficaEntradaValida.js");
+const { verifyValidEntrance } = require("./utils/verficaEntradaValida.js");
 
 function exercicio06() {
   const numeroSorteado = parseInt(Math.random() * 5 + 1);

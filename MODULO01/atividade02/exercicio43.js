@@ -1,4 +1,4 @@
-const { generateVector } = require("./generateVector");
+const { generateVector } = require("./utils/generateVector.js");
 
 function joinObjects(obj1,obj2) {
   return {...obj1, ...obj2};
