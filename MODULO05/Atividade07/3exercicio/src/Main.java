@@ -27,16 +27,24 @@ public class Main {
                     undoManager.addText(newText);
                     break;
                 case 2:
-                    System.out.println("Digite o texto que deseja remover: ");
-                    String removeText = scanner.nextLine();
-                    undoManager.removeText(removeText);
+                    if(undoManager.isTextEmpty()){
+                        System.out.println("Sem texto salvo para ser removido.");
+                    } else {
+                        System.out.println("Digite o texto que deseja remover: ");
+                        String removeText = scanner.nextLine();
+                        undoManager.removeText(removeText);
+                    }
                     break;
                 case 3:
-                    System.out.println("Digite o texto que deseja editar: ");
-                    String oldText = scanner.nextLine();
-                    System.out.println("Digite o novo texto: ");
-                    String newEditText = scanner.nextLine();
-                    undoManager.editText(oldText, newEditText);
+                    if(undoManager.isTextEmpty()){
+                        System.out.println("Sem texto salvo para ser editado.");
+                    } else {
+                        System.out.println("Digite o texto que deseja editar: ");
+                        String oldText = scanner.nextLine();
+                        System.out.println("Digite o novo texto: ");
+                        String newEditText = scanner.nextLine();
+                        undoManager.editText(oldText, newEditText);
+                    }
                     break;
                case 4:
                     undoManager.undo();

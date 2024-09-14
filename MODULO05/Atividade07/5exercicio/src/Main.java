@@ -54,7 +54,6 @@ public class Main {
                 case 2:
                     if(handManager.isEmpty()) {
                         System.out.println("A mão está vazia.");
-                        return;
                     } else {
                         System.out.println("Digite a posição da carta que deseja remover: ");
                         int position = scanner.nextInt();
@@ -65,7 +64,6 @@ public class Main {
                 case 3:
                     if(handManager.isEmpty()) {
                         System.out.println("A mão está vazia.");
-                        return;
                     } else {
                         System.out.println("Digite a posição da carta que deseja mover: ");
                         int initialPosition = scanner.nextInt();;
