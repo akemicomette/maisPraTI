@@ -29,7 +29,7 @@ public class TextEditor {
             System.out.println("Nada para desfazer.");
             return;
         }
-        System.out.println("Desfazendo ultima ação, texto atual: " + current.text);
+        System.out.println("Desfazendo ultima ação: " + current.text);
         undoRedo = current;
         current = current.prev;
         if(current != null) {
@@ -38,7 +38,7 @@ public class TextEditor {
     }
 
     public void redo() {
-        if (undoRedo == null) {
+        if (undoRedo == null ) {
             System.out.println("Nenhuma ação para refazer");
             return;
         }

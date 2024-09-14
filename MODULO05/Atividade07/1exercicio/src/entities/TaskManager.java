@@ -7,7 +7,7 @@ public class TaskManager {
 
     public TaskManager() {
         this.head = null;
-        this.taskIdCounter = 1;
+        this.taskIdCounter = 0;
     }
 
     public void addTask(String nameTask) {
@@ -21,25 +21,27 @@ public class TaskManager {
             }
             current.next = newTask;
         }
+        System.out.println("Código " + taskIdCounter + ": " + nameTask);
     }
 
     public boolean isListEmpty() {
         return head == null;
     }
 
-    public void removeTask(int id) {
+    public void removeTask(int taskIdCounter) {
         if (head == null){
             System.out.println("A lista esta vazia!");
             return;
         }
-        if (head.id == id){
+        if (head.id == taskIdCounter){
             head = head.next;
             return;
         }
+        System.out.println("Código " + taskIdCounter + "apagada.");
 
         Task current = head;
         while(current.next != null) {
-            if(current.next.id == id) {
+            if(current.next.id == taskIdCounter) {
                 current.next = current.next.next;
                 return;
             }
@@ -56,6 +58,8 @@ public class TaskManager {
             }
             current = current.next;
         }
+        System.out.println("Código: " + taskIdCounter + ": " + current);
+
     }
 
     public void displayTasks() {
@@ -63,8 +67,10 @@ public class TaskManager {
         if (current == null) {
             System.out.println("Lista vazia");
         } else {
-            System.out.println(current);
-            current = current.next;
+            while(current != null) {
+                System.out.println(current);
+                current = current.next;
+            }
         }
     }
 }

@@ -9,6 +9,10 @@ public class Manager {
         this.text = new StringBuilder();
     }
 
+    public boolean isTextEmpty() {
+        return text.length() == 0;
+    }
+
     public void addText(String newText) {
         ActionsNode newNode = new ActionsNode(1, newText, null);
         newNode.next = head;
@@ -40,6 +44,7 @@ public class Manager {
 
             text.replace(index, index + oldText.length(), newText);
             System.out.println("Texto editado: '" + oldText + "' para '" + newText + "'.");
+
         } else {
             System.out.println("Texto não encontrado: '" + oldText + "'.");
         }
@@ -65,6 +70,7 @@ public class Manager {
                     break;
             }
             head = head.next;
+
         } else {
             System.out.println("Nenhuma ação no histórico para desfazer.");
         }

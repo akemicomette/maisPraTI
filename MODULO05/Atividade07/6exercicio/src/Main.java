@@ -1,15 +1,10 @@
 import entities.BankQueue;
-import entities.Client;
-
-import java.util.LinkedList;
-import java.util.Queue;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
         BankQueue bankQueue = new BankQueue();
         Scanner scanner = new Scanner(System.in);
-        Queue<Client> queue = new LinkedList<>();
 
         int clientCounter = 1;
         int selection;
