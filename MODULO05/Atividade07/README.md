@@ -15,7 +15,7 @@ Este repositório contém a lista 07 de exercícios de programação em Java, fe
 
 ```bash
 # HTTPS:
-git clone https://github.com/akemicomette/
+git clone https://github.com/akemicomette/maisPraTI/tree/main/MODULO05/Atividade07
 
 ```
 
