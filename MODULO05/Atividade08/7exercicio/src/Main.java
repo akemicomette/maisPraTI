@@ -7,8 +7,11 @@ public class Main {
         int selection;
         PaymentMethods payment;
         System.out.println("Insira o valor do pagamento que deseja efetuar: ");
-        double valueOfPayment = scanner.nextInt();
-
+        while(!scanner.hasNextInt()) {
+            scanner.next();
+            System.out.println("Valor inserido inválido, tente novamente!");
+        }
+        double valueOfPayment = scanner.nextDouble();
 
         do {
             System.out.println("\nEscolha a forma de pagamento: ");
@@ -30,15 +33,15 @@ public class Main {
                     String securityCode = scanner.nextLine();
                     payment = new CreditCard(cardNumber, nameOnCard, securityCode);
 
-                    payment.processPayment(200);
+                    payment.processPayment(valueOfPayment);
                     break;
                 case 2:
                     payment = new PaymentSlip();
-                    payment.processPayment(200);
+                    payment.processPayment(valueOfPayment);
                     break;
                 case 3:
                     payment = new BankTransfer();
-                    payment.processPayment(15);
+                    payment.processPayment(valueOfPayment);
                     break;
                 case 4:
                     System.out.println("Saindo...");
