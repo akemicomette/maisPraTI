@@ -11,10 +11,6 @@ public class PaymentSlip extends PaymentMethods {
     }
 
     public boolean validatePayment()  {
-        boolean isSlipValid = true;
-        if(!isSlipValid) {
-            throw new RuntimeException("Boleto inválido.");
-        }
-        return isSlipValid;
+        return true;
     }
 }
